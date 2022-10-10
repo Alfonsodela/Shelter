@@ -1,0 +1,91 @@
+.main-wrapper {
+  @include mobile {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    &__carimage {
+      width: 375px;
+      height: 440px;
+      margin-top: -70px;
+      z-index: -1;
+      background-image: url("../../assets/tt.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+  }
+
+  @include desktop {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    &__carimage {
+      width: 100%;
+      max-width: 1376px;
+      height: 100vh;
+      max-height: 682px;
+      margin-top: 0;
+
+      background-image: url("../../assets/tt.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+  }
+}
+
+.nav-link {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $secondary-color;
+    color: $base-color;
+    width: 85px;
+    height: 75px;
+    margin-left: 250px;
+    margin-top: 70px;
+
+    &__a {
+      margin-bottom: .125rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.25em;
+    }
+
+    &__b {
+      margin-top: .125rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.25em;
+    }
+  }
+
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $secondary-color;
+    color: $base-color;
+    width: 100px;
+    height: 100px;
+    margin-left: 500px;
+    margin-top: 0px;
+
+    &__a {
+      margin-bottom: .125rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.25em;
+    }
+
+    &__b {
+      margin-top: .125rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.25em;
+    }
+  }
+}
